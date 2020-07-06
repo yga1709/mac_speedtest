@@ -101,7 +101,7 @@ convert_images(){
 upscale_images_wrapper(){
 	echo "waifu2xによる画像のアップスケーリング処理を開始します。"
 	cd ./macspeedtest/2/
-	(time upscale_images_core) 2>&1
+	(time upscale_images_core) >> ./macspeedtest/$result_file 2>&1
 	cd ../../
 }
 
